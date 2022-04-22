@@ -1,0 +1,7 @@
+@media only screen and (min-width: 481px) {
+    nav.LSnavigation > ul > li {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

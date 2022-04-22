@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Optima;
+    src: url(Optima.woff) format('woff')
+}
+
+/*
+    LS Studio Website
+    Web Project
+
+    Author:Lorena Sanchez
+    Date:2022-05-02
+
+    Filename: ls_styles.css
+*/
+
+/*HTML and Body Styles */
+
+html {
+    background-color: rgb(229,221,208);
+    width: auto;
+}
+
+body {
+    color: rgb(53,39,28);
+    background-color:rgb(162,147,105);
+    font-family: Optima, sans-serif;
+    width:100%;
+    max-width:max-content;
+}
+
+body::after {
+    clear:both;
+    content:"";
+    display:table;
+}
+body> article {
+    font-size: medium;
+    color:rgb(65,66,36);
+    background-color: rgb(147,98,71);
+    border: 0px solid black;
+    width:auto;
+    clear: none;
+    height: 1000px;
+}
+
+p#intro {
+    padding-top: 20px;
+    margin-right: 10px;
+}
+
+p#intro_continued {
+    padding-top: 60px;
+    padding-right: 20px;
+    padding-left:20px;
+    word-wrap: normal;
+}
+
+body> article> p {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+body > article >p#about, p#about1, p#about2 {
+    font-size: medium;
+    word-wrap:normal
+}
+
+/*Hypertext links*/
+a{
+    color:rgb(73,75,50);
+}
+
+a:hover {
+    color:rgb(53,39,28);
+}
+
+a:focus {
+    outline:thin dotted;
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+
+/*Heading Styles */
+
+body> article> h1{
+    font-size: x-large;
+    text-align: center;
+    max-width:none;
+}
+
+h1 {
+    color:rgb(229,221,208);
+    background-color:rgb(65,66,36);
+    background: linear-gradient(rgb(65,66,36), black);
+}
+
+h2{
+    color:rgb(227, 199, 166);
+    text-decoration:overline;
+    text-align:left;
+    font-style: italic;
+    font-size: large;
+}
+
+/*Navigation Styles */
+
+nav {
+    font-size: 1em;
+    float: left;
+}
+
+nav.LSnavigation > ul {
+    line-height:2em;
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+nav.LSnavigation > ul > li {
+    margin-top: 5px;
+    width: 20%;
+}
+
+nav.LSnavigation > ul > li {
+    display: block;
+    float: left;
+    text-align: center; 
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+    color:rgb(65,66,36);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8%;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+    color:white;
+    text-decoration:none;
+}
+
+/* Images and media style*/
+
+img {
+    border: 0;
+    vertical-align: middle;
+    float:left;
+}
+
+img.Logo {
+    vertical-align: middle;
+    float: right;
+}
+
+img.wedding {
+    padding: 0 20px 20px 0;
+    border-radius: 160px 160px 40px 40px;
+    float: right;
+
+}
+img.Luis {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img.Lorena {
+    margin-left:10px; 
+    margin-right: 10px
+}
+img.flores1 {
+    margin-left: 60px;
+}
+
+img.presentation1 {
+    position: absolute;
+    top: 250px;
+    left: 780px;
+    z-index: 1;
+}
+
+img.presentation2 {
+    position: absolute;
+    top: 540px;
+    left: 880px;
+    z-index: 2;
+}
+
+img.presentation3 {
+    position: absolute;
+    top: 580px;
+    left: 700px;
+    z-index: 3;
+}
+
+
+video.LL {
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+video{
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 8px;
+    background:rgb(227, 199, 166);
+    color: black;
+    border-radius: 40px 40px 40px 40px;
+}
+
+audio {
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    width: 35%;
+}
+/*Form Layout Styles*/ 
+
+form#booking {
+    display: flex;
+    padding-top: 5px;
+}
+
+
+form#booking > fieldset {
+    background-color: rgba(65, 66, 36, 0.785);
+    font-size: 0.85em;
+    color: rgba(192, 117, 76, 0.836);
+    border-radius: 10px;
+    border-color: rgba(192, 117, 76, 0.836);
+}
+
+form#booking > fieldset > legend {
+    color: rgba(39, 23, 14, 0.868);
+    padding: 5px;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+}
+
+input [type="submit"] {
+    background-color: brown;
+    border: 0px;
+    padding: 5px 20px;
+    color:blanchedalmond;
+}
+
+/*Table Styles */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding-top: 40px;
+}
+
+table > caption {
+    padding-top: 40px;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+thead {
+    background-color: rgb(184, 190, 190);
+    color: black;
+    height: 40px;
+}
+
+td.sess1, td.sess2, td.sess3, td.sess4 {
+    background-color: rgb(202, 201, 201);
+    color: black;
+}
+
+tbody {
+    background-color: rgb(219, 198, 172);
+}
+
+tfoot {
+    background-color: rgb(219, 198, 172);
+}
+/* Footer Styles */
+
+body > footer address {
+    background-color:rgb(162,147,105);
+    color:rgb(229,221,208);
+    color:rgb(65,66,36);
+    font: normal small-caps bold 0.9em/3em
+        Sans-serif;
+    text-align:center;
+}
+
+/* Mobile Styles Up To 480 pixels */
+
+@media only screen and (max-width:480px) {
+
+    nav#LSnavigation {
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 2.2em;
+        flex: 1 1 auto;
+    }
+
+    article {
+        flex: 1 1 auto;
+    }
+    
+}
+
+/*Tablet and Desktop Devices: 481px or more */
+
+@media only screen and (min-width: 481px) {
+
+    body{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    header, footer {
+        width: 100%;
+    }
+    nav#LSnavigation {
+            display: flex;
+            flex-flow: row nowrap;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+    }
+    
+}

@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*
+    LS Studio Website
+    Web Project
+
+    Author:Lorena Sanchez
+    Date:2022-05-02
+
+    Filename:ls_reset.css
+
+*/
+
+/* Structural Styles */
+
+article, footer, header, main, nav, section {
+    display:block;
+}
+
+/* Typographic Styles */
+
+article, body, footer, header, h1, html, img, li, p, 
+section, ul {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align:baseline;
+}
+
+nav ul {
+    list-style: none;
+    list-style-image: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1;
+}

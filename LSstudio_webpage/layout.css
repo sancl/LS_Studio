@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/*
+    LS Studio Website
+    Web Project
+
+    Author:Lorena Sanchez
+    Date:2022-05-02
+
+    Filename:ls_layout.css
+
+*/
+
+html {
+    height: 100%;
+    font-size:100%;
+    text-size-adjust: 100%;
+    overflow: auto;
+    white-space:normal;
+}
+
+img, object, embed, video {
+    max-width: 100%;
+    float: right;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    position: static;
+
+}
+
+nav {
+    width: 30%;
+}
+
+body > header {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+body> article {
+    overflow: auto;
+    word-wrap: normal;
+}
+
+body> nav {
+    width: 20%;
+    float: none;
+    margin: 0 0 0 1.5%;
+}
+
+body> footer {
+    margin:auto;
+    width: 100%;
+    overflow: hidden;
+}
+footer {
+    text-align: center;
+    margin-top: 25%;
+    border-top: 30px solid rgb(231,209,190);
+    clear:none;
+    padding-bottom: 20px;
+}
